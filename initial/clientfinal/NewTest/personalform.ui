@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PersonalForm</class>
+ <widget class="QWidget" name="PersonalForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>402</width>
+    <height>802</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>1</x>
+     <y>1</y>
+     <width>400</width>
+     <height>800</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#widget{
+	
+	background-color:#474a59;
+	border-radius:10px;
+
+}</string>
+   </property>
+   <widget class="QWidget" name="Header" native="true">
+    <property name="geometry">
+     <rect>
+      <x>1</x>
+      <y>0</y>
+      <width>400</width>
+      <height>170</height>
+     </rect>
+    </property>
+    <widget class="QPushButton" name="closeBtn">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>350</x>
+       <y>10</y>
+       <width>40</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#closeBtn{
+
+            border-radius: 5px;
+}
+#closeBtn:hover
+{
+            background-color: rgba(255,255,255,.3);
+}
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="res.qrc">
+       <normaloff>:/Asserts/icons/close.svg</normaloff>:/Asserts/icons/close.svg</iconset>
+     </property>
+     <property name="autoDefault">
+      <bool>false</bool>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="miniBtn">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>10</y>
+       <width>40</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#miniBtn{
+
+            border-radius: 5px;
+}
+#miniBtn:hover
+{
+            background-color: rgba(255,255,255,.3);
+}
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="res.qrc">
+       <normaloff>:/Asserts/icons/minimize.svg</normaloff>:/Asserts/icons/minimize.svg</iconset>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="avatarImage">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>60</y>
+       <width>100</width>
+       <height>100</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial</family>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap resource="res.qrc">:/Asserts/images/FishkoAvatar.png</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="UsersName">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>90</y>
+       <width>150</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial Black</family>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:#c9c9c9;</string>
+     </property>
+     <property name="text">
+      <string>Fishko</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="changeAvatarBtn">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>60</y>
+       <width>100</width>
+       <height>100</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#changeAvatarBtn
+{
+	background-color:transparent;
+	border-radius:50px
+}
+#changeAvatarBtn:hover
+{
+	border-radius:50px;
+	border:3px solid #fff;
+	background-color:rgba(255, 255, 255, 128);
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="usersMotto">
+     <property name="geometry">
+      <rect>
+       <x>129</x>
+       <y>130</y>
+       <width>251</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>等线</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#usersMotto
+{
+	background-color:transparent;
+	color:#c9c9c9;
+	border:none;
+}
+#usersMotto:hover
+{
+	border-radius:5px;
+	border:1px solid #fff;
+}
+#usersMotto:focus
+{
+	background-color:#fff;
+	color:#000;
+}</string>
+     </property>
+     <property name="text">
+      <string>Qt你带我走吧qwqq</string>
+     </property>
+    </widget>
+    <zorder>miniBtn</zorder>
+    <zorder>closeBtn</zorder>
+    <zorder>UsersName</zorder>
+    <zorder>avatarImage</zorder>
+    <zorder>changeAvatarBtn</zorder>
+    <zorder>usersMotto</zorder>
+   </widget>
+   <widget class="QLabel" name="underLine">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>180</y>
+      <width>380</width>
+      <height>3</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#underLine
+{
+    background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0  #e38283 ,stop:0.33 #c19f9e, stop:0.67 #91b8bb,stop:1 #1bced8);
+
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="listWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>200</y>
+      <width>380</width>
+      <height>521</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:transparent;
+border:none;</string>
+    </property>
+    <property name="verticalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOff</enum>
+    </property>
+    <property name="horizontalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOff</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="underLine_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>725</y>
+      <width>380</width>
+      <height>3</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#underLine_2
+{
+    background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0  #e38283 ,stop:0.33 #c19f9e, stop:0.67 #91b8bb,stop:1 #1bced8);
+
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="addPersonBtn">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>740</y>
+      <width>40</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#addPersonBtn
+{
+	background-color:transparent;
+	border:none;
+	border-radius:5px;
+}
+#addPersonBtn:hover
+{
+	background-color: rgba(255,255,255,.3);
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="res.qrc">
+      <normaloff>:/Asserts/icons/person_add.svg</normaloff>:/Asserts/icons/person_add.svg</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>30</width>
+      <height>30</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="friendRequest">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>740</y>
+      <width>40</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#friendRequest
+{
+	background-color:transparent;
+	border:none;
+	border-radius:5px;
+}
+#friendRequest:hover
+{
+	background-color: rgba(255,255,255,.3);
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="res.qrc">
+      <normaloff>:/Asserts/icons/notifications.svg</normaloff>:/Asserts/icons/notifications.svg</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>30</width>
+      <height>30</height>
+     </size>
+    </property>
+   </widget>
+   <zorder>Header</zorder>
+   <zorder>underLine</zorder>
+   <zorder>listWidget</zorder>
+   <zorder>underLine_2</zorder>
+   <zorder>addPersonBtn</zorder>
+   <zorder>friendRequest</zorder>
+   <zorder>changeAvatarBtn</zorder>
+  </widget>
+ </widget>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections/>
+</ui>

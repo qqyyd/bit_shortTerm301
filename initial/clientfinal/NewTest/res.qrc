@@ -1,0 +1,20 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Asserts/icons/close.svg</file>
+        <file>Asserts/icons/minimize.svg</file>
+        <file>Asserts/images/shumei.png</file>
+        <file>Asserts/images/friendAvatar.png</file>
+        <file>Asserts/images/FishkoAvatar.png</file>
+        <file>Asserts/images/loading4.gif</file>
+        <file>Asserts/icons/rotate_anti_hover.png</file>
+        <file>Asserts/icons/rotate_anti_normal.png</file>
+        <file>Asserts/icons/rotate_clock_hover.png</file>
+        <file>Asserts/icons/rotate_clock_normal.png</file>
+        <file>Asserts/icons/check.svg</file>
+        <file>Asserts/icons/person_add.svg</file>
+        <file>Asserts/icons/person_search.svg</file>
+        <file>Asserts/icons/notifications.svg</file>
+        <file>Asserts/icons/owltalk.png</file>
+        <file>Asserts/icons/owltalk.ico</file>
+    </qresource>
+</RCC>

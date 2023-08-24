@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ChatForm</class>
+ <widget class="QWidget" name="ChatForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>432</width>
+    <height>752</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>1</x>
+     <y>1</y>
+     <width>430</width>
+     <height>750</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+	background-color:#474a59;
+	border-radius:10px;</string>
+   </property>
+   <widget class="QLabel" name="friendName">
+    <property name="geometry">
+     <rect>
+      <x>109</x>
+      <y>0</y>
+      <width>200</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>等线</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:#c9c9c9;</string>
+    </property>
+    <property name="text">
+     <string>友人A</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPlainTextEdit" name="inputEdit">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>680</y>
+      <width>300</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>等线</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#inputEdit
+{
+	border-radius: 5px;
+	border:1px solid #fff;
+	color:#c9c9c9;
+	padding:5px
+}
+#inputEdit:selected
+{
+	background-color:#fff;
+}</string>
+    </property>
+    <property name="plainText">
+     <string>Hello world! 你好！</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="sendBtn">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>680</y>
+      <width>60</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>等线</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#sendBtn
+{
+	border-radius:5px;
+	border:1px solid #fff;
+	color:#c9c9c9;
+    
+}
+#sendBtn:hover
+{
+	background:#fff;
+	color:#000;
+}</string>
+    </property>
+    <property name="text">
+     <string>发送</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="closeBtn">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>10</y>
+      <width>40</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#closeBtn{
+
+            border-radius: 5px;
+}
+#closeBtn:hover
+{
+            background-color: rgba(255,255,255,.3);
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="res.qrc">
+      <normaloff>:/Asserts/icons/close.svg</normaloff>:/Asserts/icons/close.svg</iconset>
+    </property>
+    <property name="autoDefault">
+     <bool>false</bool>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="miniBtn">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>10</y>
+      <width>40</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#miniBtn{
+
+            border-radius: 5px;
+}
+#miniBtn:hover
+{
+            background-color: rgba(255,255,255,.3);
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="res.qrc">
+      <normaloff>:/Asserts/icons/minimize.svg</normaloff>:/Asserts/icons/minimize.svg</iconset>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="listWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>80</y>
+      <width>390</width>
+      <height>511</height>
+     </rect>
+    </property>
+    <property name="verticalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOff</enum>
+    </property>
+    <property name="horizontalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOff</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="underLine_2">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>660</y>
+      <width>370</width>
+      <height>3</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#underLine_2
+{
+    background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0  #e38283 ,stop:0.33 #c19f9e, stop:0.67 #91b8bb,stop:1 #1bced8);
+
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="underLine">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>60</y>
+      <width>370</width>
+      <height>3</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#underLine
+{
+    background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0  #e38283 ,stop:0.33 #c19f9e, stop:0.67 #91b8bb,stop:1 #1bced8);
+
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QWidget" name="voiceChatWidget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>600</y>
+      <width>370</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#voiceChatWidget
+{
+	background-color:transparent;
+	border-radius:0px;
+	border-top:1px solid #c9c9c9;
+}</string>
+    </property>
+    <widget class="QRadioButton" name="highVBtn">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>10</y>
+       <width>40</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>等线</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#highVBtn::indicator
+{
+	width:0;
+}
+#highVBtn
+{
+	border-radius:5px;
+	color:#c9c9c9;
+	padding-left:5px;
+}
+#highVBtn::unchecked
+{
+	border:1px solid #fff;
+}
+#highVBtn::checked
+{
+	border:3px solid #fff;
+	background-color:#fff;
+	color:#000;
+}</string>
+     </property>
+     <property name="text">
+      <string>高</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="lowVBtn">
+     <property name="geometry">
+      <rect>
+       <x>330</x>
+       <y>10</y>
+       <width>40</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>等线</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#lowVBtn::indicator
+{
+	width:0;
+}
+#lowVBtn
+{
+	border-radius:5px;
+	color:#c9c9c9;
+	padding-left:5px;
+}
+#lowVBtn::unchecked
+{
+	border:1px solid #fff;
+}
+#lowVBtn::checked
+{
+	border:3px solid #fff;
+	background-color:#fff;
+	color:#000;
+}</string>
+     </property>
+     <property name="text">
+      <string>低</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="VoiceStartBtn">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>10</y>
+       <width>120</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>等线</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#VoiceStartBtn
+{
+	border-radius:5px;
+	color:#c9c9c9;
+	border:1px solid #fff;
+}
+#VoiceStartBtn:hover
+{
+	border:3px solid #fff;
+	background-color:#fff;
+	color:#000;
+}</string>
+     </property>
+     <property name="text">
+      <string>语音通话</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections/>
+</ui>
